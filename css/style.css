@@ -15,12 +15,27 @@ body{
     justify-content: center;
     background-color: lightgray;
 }
+.card-container{
+    width: 1120px;
+}
+.card-wrapper{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
 .card{
     width: 320px;
     border-radius: 25px;
     background-color: #fff;
+    z-index: 0;
+    transition: 0.4s all;
 }
-
+.card:hover{
+    z-index: 1;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 2);
+    transform: scale(1.05);
+}
 .card-image{
     position: relative;
     height: 150px;
